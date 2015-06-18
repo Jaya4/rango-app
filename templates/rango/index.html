@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <title>Rango</title>
+</head>
+<body>
+<h1>Rango Says...</h1>
+hello world!<strong>{{ boldmessage }}</strong><br/>
+<a href = "/rango/about">About</a><br/>
+<img src = "{% static "images/1.jpg" %}" alt = "picture of rango"/>
+
+    <ul>
+    <li>category</li>{% for category in categories %}
+    </ul>
+{% endfor %}
+</body>
+</html>
